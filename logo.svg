@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <defs>
+    <style>
+      .bg { fill: #0d2a3d; }
+      .lung { fill: #0d2a3d; stroke: #A8E6CF; stroke-width: 2.0; stroke-linecap: round; stroke-linejoin: round; }
+      .bronchi { fill: none; stroke: #A8E6CF; stroke-width: 0.9; stroke-linecap: round; opacity: 0.65; }
+      .bronchi-fine { fill: none; stroke: #A8E6CF; stroke-width: 0.6; stroke-linecap: round; opacity: 0.4; }
+      .brand { font-family: 'Georgia', 'Times New Roman', serif; font-size: 32px; font-weight: bold; letter-spacing: 2px; }
+      .sub { font-family: 'Arial', 'Helvetica', sans-serif; font-size: 10px; letter-spacing: 4px; fill: #A8E6CF; }
+    </style>
+  </defs>
+
+  <rect width="400" height="160" rx="12" class="bg"/>
+
+  <!-- CIRCLES — centered lower, so top diameters intersect lung bases -->
+  <g transform="translate(76, 90) scale(0.82)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#A8E6CF" stroke-width="1.2" opacity="0.9"/>
+    <circle cx="0" cy="0" r="27" fill="none" stroke="#A8E6CF" stroke-width="1.0" opacity="0.6"/>
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#A8E6CF" stroke-width="0.8" opacity="0.35"/>
+    <circle cx="0" cy="0" r="57" fill="none" stroke="#A8E6CF" stroke-width="0.6" opacity="0.18"/>
+    <circle cx="0" cy="0" r="5" fill="#A8E6CF"/>
+  </g>
+
+  <!-- LUNGS — higher up, flipped (apex up, base down toward circles) -->
+  <g transform="translate(76, 72) scale(0.78) scale(1,-1)">
+
+    <!-- LEFT LUNG -->
+    <path d="M-4,-6 C-12,-32 -40,-34 -43,-16 C-47,8 -34,38 -18,50 C-10,56 -4,52 -4,44 Z" class="lung"/>
+    <path d="M-4,-4 C-7,4 -12,10 -16,12" class="bronchi"/>
+    <path d="M-16,12 C-20,20 -26,28 -28,34" class="bronchi"/>
+    <path d="M-16,12 C-18,4 -22,-8 -24,-20" class="bronchi"/>
+    <path d="M-28,34 C-32,38 -36,36 -36,30" class="bronchi-fine"/>
+    <path d="M-28,34 C-26,40 -22,44 -20,42" class="bronchi-fine"/>
+    <path d="M-24,-20 C-30,-24 -34,-20 -36,-14" class="bronchi-fine"/>
+    <path d="M-24,-20 C-22,-28 -18,-34 -14,-36" class="bronchi-fine"/>
+
+    <!-- RIGHT LUNG -->
+    <path d="M4,-6 C12,-32 40,-34 43,-16 C47,8 34,38 18,50 C10,56 4,52 4,44 Z" class="lung"/>
+    <path d="M4,-4 C7,4 12,10 16,12" class="bronchi"/>
+    <path d="M16,12 C20,20 26,28 28,34" class="bronchi"/>
+    <path d="M16,12 C20,10 24,8 28,10" class="bronchi"/>
+    <path d="M16,12 C18,4 22,-8 24,-20" class="bronchi"/>
+    <path d="M28,34 C32,38 36,36 36,30" class="bronchi-fine"/>
+    <path d="M28,34 C26,40 22,44 20,42" class="bronchi-fine"/>
+    <path d="M28,10 C32,8 36,10 36,14" class="bronchi-fine"/>
+    <path d="M24,-20 C30,-24 34,-20 36,-14" class="bronchi-fine"/>
+    <path d="M24,-20 C22,-28 18,-34 14,-36" class="bronchi-fine"/>
+
+    <!-- Carina -->
+    <path d="M0,18 C-2,10 -4,4 -4,-6" fill="none" stroke="#A8E6CF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M0,18 C2,10 4,4 4,-6" fill="none" stroke="#A8E6CF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Trachea -->
+    <rect x="-2.5" y="18" width="5" height="26" rx="2.5" fill="#A8E6CF"/>
+
+  </g>
+
+  <!-- TEXT -->
+  <text x="130" y="72" class="brand">
+    <tspan fill="white">Breath</tspan><tspan fill="#A8E6CF">Center</tspan>
+  </text>
+
+  <line x1="130" y1="82" x2="375" y2="82" stroke="#A8E6CF" stroke-width="0.6" opacity="0.4"/>
+  <text x="130" y="98" class="sub">WELLNESS &amp; LONGEVITY</text>
+
+  <rect width="400" height="160" rx="12" fill="none" stroke="#A8E6CF" stroke-width="0.8" opacity="0.2"/>
+</svg>
