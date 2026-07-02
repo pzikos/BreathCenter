@@ -191,6 +191,13 @@ h1,h2,.sec-title{font-family:'Cormorant Garamond',Georgia,serif!important;font-w
 body,p,input,textarea,select,button,label{font-family:'DM Sans',sans-serif!important}
 .sec-tag span,.nav-links a,.foot-links a{font-family:'DM Sans',sans-serif!important;letter-spacing:1.5px}
 </style>
+
+<style>
+@media(max-width:768px){
+  .circle-nav-grid{grid-template-columns:1fr!important;gap:32px!important}
+  .circle-nav-wrap{max-width:340px!important;margin:0 auto}
+}
+</style>
 </head>
 <body>
 <nav>
@@ -238,7 +245,7 @@ body,p,input,textarea,select,button,label{font-family:'DM Sans',sans-serif!impor
 
 
 <section style="background:var(--deep);padding:64px 56px">
-  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
+  <div class="circle-nav-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
 
     <!-- LEFT: text -->
     <div>
@@ -263,8 +270,8 @@ body,p,input,textarea,select,button,label{font-family:'DM Sans',sans-serif!impor
 
     <!-- RIGHT: circle navigator -->
     <div style="display:flex;align-items:center;justify-content:center">
-      <div style="position:relative;width:640px;height:640px">
-        <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" width="640" height="640">
+      <div class="circle-nav-wrap" style="position:relative;width:100%;max-width:640px">
+        <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
   <defs>
     <style>
       .seg{cursor:pointer}
