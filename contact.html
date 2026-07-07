@@ -229,10 +229,10 @@ body,p,input,textarea,select,button,label{font-family:'DM Sans',sans-serif!impor
       <h3>Send us a message</h3>
       <form onsubmit="sendMail(event)">
         <div class="form-row">
-          <div class="fg"><label>First Name</label><input type="text" id="fname" placeholder="Nick"/></div>
-          <div class="fg"><label>Last Name</label><input type="text" id="lname" placeholder="Papadopoulos"/></div>
+          <div class="fg"><label>First Name</label><input type="text" id="fname" placeholder=""/></div>
+          <div class="fg"><label>Last Name</label><input type="text" id="lname" placeholder=""/></div>
         </div>
-        <div class="fg"><label>Email</label><input type="email" id="email" placeholder="email@example.com"/></div>
+        <div class="fg"><label>Email</label><input type="email" id="email" placeholder=""/></div>
         <div class="fg">
           <label>I am interested in</label>
           <select id="interest">
@@ -244,7 +244,7 @@ body,p,input,textarea,select,button,label{font-family:'DM Sans',sans-serif!impor
             <option>General Information</option>
           </select>
         </div>
-        <div class="fg"><label>Message</label><textarea rows="4" id="message" placeholder="How can we help you?"></textarea></div>
+        <div class="fg"><label>Message</label><textarea rows="4" id="message" placeholder=""></textarea></div>
         <button type="submit" class="form-btn">Send Message</button>
       </form>
     </div>
